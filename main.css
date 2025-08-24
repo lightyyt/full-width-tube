@@ -1,0 +1,114 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #334;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* top bar */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    height: 56px;
+    padding: 0 16px;
+}
+
+/* logo/icon */
+.icon {
+    height: 32px;
+    width: auto;
+}
+
+/* search box + button container */
+.search-area {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 16px;
+}
+
+#inputbox {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #555;
+    border-right: none;
+    background-color: #121212;
+    color: white;
+}
+
+.styled_button {
+    padding: 0 16px;
+    background-color: #313131;
+    border: 1px solid #555;
+    color: white;
+    cursor: pointer;
+    height: 40px;            /* make all buttons uniform */
+}
+
+.styled_button:hover {
+    background-color: #444;
+}
+
+
+.styled_button:hover {
+    background-color: #444;
+}
+
+/* keep right-side buttons aligned */
+.right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between buttons */
+}
+
+dialog {
+    background-color: #445;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 25%;
+    height: 25%;
+    padding: 16px;
+}
+
+/* flexbox on the content instead */
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between; /* label/input at top, button at bottom */
+}
+
+.dialog-content input {
+    padding: 8px;
+    border: 1px solid #555;
+    border-right: none;
+    background-color: #121212;
+    color: white;
+    width: calc(100%-8px);
+    margin:8px;
+}
+
+.cendiv {
+    width: 100%;
+    text-align: center;
+}
+
+.dialog-content button {
+    align-self: center;
+    padding: 8px 16px;
+    background-color: #313131;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.dialog-content button:hover {
+    background-color: #555;
+}
