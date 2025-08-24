@@ -79,7 +79,6 @@ async function getHomeFeed() {
     // Otherwise fetch fresh data
     const apiKey = localStorage.getItem("ytApiKey");
     if (!apiKey) {
-        alert("No API key saved!");
         return null;
     }
 
